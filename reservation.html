@@ -1,26 +1,91 @@
 <!doctype html>
 <html lang="lv">
 <head>
-  <meta charset="utf-8">
-  <title>Reservation</title>
-  <meta name="description" content="Rezervesanas lapa">
-  <link rel="stylesheet" href="css/reservation.css">
+    <meta charset="utf-8">
+    <title>Reservation</title>
+    <meta name="description" content="Rezervesanas lapa">
+    <link rel="stylesheet" href="css/reservation.css">
 </head>
 <body>
-  <header>
-    <h1>Atrodi sev tīkamo ceļojumu un rezervē to jau tagad!</h1>
-  </header>
-  <section class='firstSection'>
-    
-  </section>
-  <section class='secondSection'>
-    
-    
-    
-  </section>
-  <section class='thirdSection'>
-    
-  </section>
+    <div class='UpperContent'>
+        <header>
+            <h1>Atrodi sev tīkamo ceļojumu un rezervē to jau tagad !</h1>
+        </header>
+        <div class='FlightType'>
+            <h2>
+                Lidojuma veids:
+            </h2>
+            <button class='button'>
+                Vienvirziens
+            </button>
+            <button class='button'>
+                Turp un atpakaļ
+            </button>
+        </div>
+        <div class='FlightsList'>
+            <article>
+                <h3>
+                    Datums   
+                </h3>
+                <form>
+                    <label for="From">No </label>
+                    <input type="search" id="From" name="From">
+                    <label for="To">Līdz </label>
+                    <input type="search" id="To" name="To">
+                </form>
+
+                <section class='firstSection'>
+                    <p>
+                        Datums        Izlidošanas laiks      Reisa nummurs      No      Uz      Lidosta      Cena
+                    </p>
+                </section>
+                <section class='secondSection'>
+                    <p>
+                        13.11.2021          8:00                00000001       Rīgas   Prāgu  Rīgas galvena  100 €
+                    </p>
+                    <button class='Rezervet'>
+                        Rezervēt
+                    </button>
+                </section>
+            </article>
+        </div>
+    </div>
+    <div class='LowerContent'>
+        <div class='ButtonTrio'>
+            <button class='button'>
+                Populārakais
+            </button>
+            <button class='button'>
+                Lētakais
+            </button>
+            <button class='button'>
+                Viss biežak izvēletākais
+            </button>
+        </div>
+        <div class='Pictures'>
+            <img class="firstPhoto" src="photo/Paris.jpg" width="411" height="268" alt="Paris photo">
+            <p>
+                Parīze
+                <div class='Blue text'>
+                    sākot no 199 €
+                </div>
+            </p>
+            <img class="secondPhoto" src="photo/Prague.jpg" width="411" height="268" alt="Prague photo">
+            <p>
+                Prāga
+                <div class='Blue text'>
+                    sākot no 100 €
+                </div>
+            </p>
+            <img class="thirdPhoto" src="photo/London.jpg" width="411" height="268" alt="London photo">
+            <p>
+                Londona
+                <div class='Blue text'>
+                    sākot no 129 €
+                </div>
+            </p>
+        </div>
+    </div>
+    <script src="js/reservation.js"></script>
 </body>
-  <script src="js/reservation.js"></script>
 </html>
