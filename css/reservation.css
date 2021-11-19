@@ -1,8 +1,30 @@
-body {
-    background: linear-gradient(
-        to right,
-        rgba(130, 28, 166, 0.37)
-        rgba(130, 28, 166, 0.37)
-      ),url(../photo/BackgroundLidojumi.jpg);
-      margin-bottom: 1000px;
+.Pictures {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
 }
+
+.firstPhoto {
+    width: 411px;
+    height: 268px;
+}
+
+.secondPhoto {
+    width: 411px;
+    height: 268px;
+}
+
+.thirdPhoto {
+    width: 411px;
+    height: 268px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+

@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="css/reservation.css">
 </head>
 <body>
-    <div class='UpperContent'>
-        <header>
-            <h1>Atrodi sev tīkamo ceļojumu un rezervē to jau tagad !</h1>
-        </header>
+    <header>
+        <h1>Atrodi sev tīkamo ceļojumu un rezervē to jau tagad !</h1>
         <div class='FlightType'>
             <h2>
                 Lidojuma veids:
@@ -24,33 +22,43 @@
         </div>
         <div class='FlightsList'>
             <article>
-                <h3>
-                    Datums   
-                </h3>
+            
                 <form>
+                    <h3>
+                        Datums
+                    </h3>
                     <label for="From">No </label>
-                    <input type="search" id="From" name="From">
+                    <input type="date" id="From" name="From">
                     <label for="To">Līdz </label>
-                    <input type="search" id="To" name="To">
+                    <input type="date" id="To" name="To">
                 </form>
-
-                <section class='firstSection'>
-                    <p>
-                        Datums        Izlidošanas laiks      Reisa nummurs      No      Uz      Lidosta      Cena
-                    </p>
-                </section>
-                <section class='secondSection'>
-                    <p>
-                        13.11.2021          8:00                00000001       Rīgas   Prāgu  Rīgas galvena  100 €
-                    </p>
-                    <button class='Rezervet'>
-                        Rezervēt
-                    </button>
-                </section>
+                <table>
+                    <tr class="Table_parameters">
+                        <td>Datums</td>
+                        <td>Izlidošanas laiks</td>
+                        <td>Reisa nummurs</td>
+                        <td>No</td>
+                        <td>Uz</td>
+                        <td>Lidosta</td>
+                        <td>Cena</td>
+                    </tr>
+                    <tr class="Table_info">
+                        <td>13.11.2021</td>
+                        <td>8:00</td>
+                        <td>00000001</td>
+                        <td>Rīgas</td>
+                        <td>Prāgu</td>
+                        <td>Rīgas galvenā</td>
+                        <td>100 €</td>
+                    </tr>
+                </table>                    
+                <button class='Rezervet'>
+                    Rezervēt
+                </button>
             </article>
         </div>
-    </div>
-    <div class='LowerContent'>
+    </header>
+    <footer>
         <div class='ButtonTrio'>
             <button class='button'>
                 Populārakais
@@ -63,21 +71,21 @@
             </button>
         </div>
         <div class='Pictures'>
-            <img class="firstPhoto" src="photo/Paris.jpg" width="411" height="268" alt="Paris photo">
+            <img class="firstPhoto" src="photo/Paris.jpg" alt="Paris photo">
             <p>
                 Parīze
                 <div class='Blue text'>
                     sākot no 199 €
                 </div>
             </p>
-            <img class="secondPhoto" src="photo/Prague.jpg" width="411" height="268" alt="Prague photo">
+            <img class="secondPhoto" src="photo/Prague.jpg" alt="Prague photo">
             <p>
                 Prāga
                 <div class='Blue text'>
                     sākot no 100 €
                 </div>
             </p>
-            <img class="thirdPhoto" src="photo/London.jpg" width="411" height="268" alt="London photo">
+            <img class="thirdPhoto" src="photo/London.jpg" alt="London photo">
             <p>
                 Londona
                 <div class='Blue text'>
@@ -85,7 +93,7 @@
                 </div>
             </p>
         </div>
-    </div>
+    </footer>
     <script src="js/reservation.js"></script>
 </body>
 </html>
