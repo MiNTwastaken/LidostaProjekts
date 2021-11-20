@@ -8,13 +8,12 @@
 </head>
 <body>
     <header>
-        <h1>Atrodi sev tīkamo ceļojumu un rezervē to jau tagad !</h1>
         <div class='FlightsList'>
             <div class='FlightType'>
                 <h2>
                     Lidojuma veids:
                 </h2>
-                <button class='ButtonCircle'>
+                <button class='ButtonCircle ButtonCircle2nd'>
                     Vienvirziens
                 </button>
                 <button class='ButtonCircle'>
@@ -49,13 +48,16 @@
                         <td>Prāgu</td>
                         <td>Rīgas galvenā</td>
                         <td>100 €</td>
+                        <td>
+                            <button class='Rezervet'>
+                                Rezervēt
+                            </button>
+                        </td>
                     </tr>
                 </table>
-                <button class='Rezervet'>
-                    Rezervēt
-                </button>
             </article>
         </div>
+        <h1>Atrodi sev tīkamo ceļojumu un rezervē to jau tagad !</h1>
     </header>
     <footer>
         <div class='ButtonTrio'>
@@ -70,27 +72,33 @@
             </button>
         </div>
         <div class='Pictures'>
-            <img class="firstPhoto" src="photo/Paris.jpg" alt="Paris photo">
-            <p>
-                Parīze
-                <div class='Blue-text'>
-                    sākot no 199 €
-                </div>
-            </p>
-            <img class="secondPhoto" src="photo/Prague.jpg" alt="Prague photo">
-            <p>
-                Prāga
-                <div class='Blue-text'>
-                    sākot no 100 €
-                </div>
-            </p>
-            <img class="thirdPhoto" src="photo/London.jpg" alt="London photo">
-            <p>
-                Londona
-                <div class='Blue-text'>
-                    sākot no 129 €
-                </div>
-            </p>
+            <div class="photo">
+                <img class="firstPhoto" src="photo/Paris.jpg" alt="Paris photo">
+                <p class="first">
+                    Parīze
+                    <span class='Blue-text'>
+                        sākot no 199 €
+                    </span>
+                </p>
+            </div>
+            <div class="photo">
+                <img class="secondPhoto" src="photo/Prague.jpg" alt="Prague photo">
+                <p class="second">
+                    Prāga
+                    <span class='Blue-text'>
+                        sākot no 100 €
+                    </span>
+                </p>
+            </div>
+            <div class="photo">
+                <img class="thirdPhoto" src="photo/London.jpg" alt="London photo">
+                <p class="third">
+                    Londona
+                    <span class='Blue-text'>
+                        sākot no 129 €
+                    </span>
+                </p>
+            </div>
         </div>
     </footer>
     <script src="js/reservation.js"></script>
